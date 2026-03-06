@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!-- Password input field -->
+<input type="password" id="pass">
+<!-- Button to show/hide password -->
+<button onclick="show()">Show</button>
+<script>
+function show(){
+// Select password input
+let x = document.getElementById("pass");
+// Check input type
+if(x.type === "password")
+// Change to text to show password
+x.type = "text";
+else
+// Change back to password
+x.type = "password";
+}
+</script>  
+</body>
+</html>
